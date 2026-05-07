@@ -13,7 +13,6 @@
     
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Inline page-specific styles for the pitch page -->
     <style>
         .form-section {
             max-width: 600px;
@@ -54,34 +53,13 @@
         }
     </style>
 
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Web Design for Mobile Pet Groomers",
-      "provider": {
-        "@type": "Organization",
-        "name": "OnSite Pet Grooming",
-        "url": "https://onsitepetgrooming.com"
-      },
-      "areaServed": "US",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Website Packages",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Standard Mobile Groomer Website"
-            },
-            "price": "149.00",
-            "priceCurrency": "USD"
-          }
-        ]
-      }
-    }
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0WY9M2WBZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P0WY9M2WBZ');
     </script>
 </head>
 <body>
@@ -140,19 +118,19 @@
         <section class="section-padding" style="background-color: var(--primary-bg); border-radius: 40px; margin: var(--space-lg) 0;">
             <div class="container" style="text-align: center;">
                 <h2>3 Simple Steps to Your New Site</h2>
-                <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                    <div style="padding: var(--space-md);">
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent-warm-hover);">01.</div>
+                <div class="feature-grid">
+                    <div class="feature-item" style="background: transparent;">
+                        <span class="step-number">01.</span>
                         <h3>The Preview</h3>
                         <p>We build your website first using your existing business data and reviews.</p>
                     </div>
-                    <div style="padding: var(--space-md);">
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent-warm-hover);">02.</div>
+                    <div class="feature-item" style="background: transparent;">
+                        <span class="step-number">02.</span>
                         <h3>The Review</h3>
                         <p>We send you a private link. If you love it, you pay the one-time $149 fee.</p>
                     </div>
-                    <div style="padding: var(--space-md);">
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent-warm-hover);">03.</div>
+                    <div class="feature-item" style="background: transparent;">
+                        <span class="step-number">03.</span>
                         <h3>The Launch</h3>
                         <p>We make your site public and help you link it to your Facebook and Google profiles.</p>
                     </div>
@@ -184,33 +162,6 @@
                     <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Get My $149 Website</button>
                 </form>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 OnSite Pet Grooming. Dedicated to helping groomers grow.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
-                
-                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Get My $149 Website</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 OnSite Pet Grooming. Dedicated to helping groomers grow.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
-v>
         </section>
     </main>
 
