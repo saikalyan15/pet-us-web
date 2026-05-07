@@ -39,26 +39,28 @@ async function build() {
             ? '<meta name="robots" content="noindex, nofollow">' 
             : '<meta name="robots" content="index, follow">';
         
-        const claimBannerHtml = data.status === 'preview' 
+        const ownerFirstName = data.owner_first_name || data.business_name.split(' ')[0];
+
+        const claimBannerHtml = data.status === 'preview'
             ? `
             <section class="section-padding container" style="text-align: center;">
                 <div class="claim-banner">
-                    <h2>Is this your business?</h2>
-                    <p style="margin-bottom: var(--space-md);">This is a preview of your professional website. Claim this listing and your custom domain today.</p>
-                    <a href="../../groomer-websites.html" class="btn btn-primary">Claim This Website for $149</a>
+                    <h2>${ownerFirstName}, this is your website preview.</h2>
+                    <p style="margin-bottom: var(--space-md);">We built this for you — no charge yet. If you like it, claim your own .com domain and go live for $49/month.</p>
+                    <a href="../../groomer-websites.html" class="btn btn-primary">Claim This Website — $49/mo</a>
                 </div>
-            </section>` 
+            </section>`
             : '';
 
         // Replace Placeholders
         let output = template
             .replace(/{{BUSINESS_NAME}}/g, data.business_name)
+            .replace(/{{OWNER_FIRST_NAME}}/g, ownerFirstName)
             .replace(/{{CITY}}/g, data.city)
             .replace(/{{STATE}}/g, data.state)
             .replace(/{{TAGLINE}}/g, data.tagline)
             .replace(/{{PHONE_RAW}}/g, data.phone.replace(/\D/g, ''))
             .replace(/{{PHONE_DISPLAY}}/g, data.phone)
-            .replace(/{{FACEBOOK_URL}}/g, data.facebook_url)
             .replace(/{{ROBOTS_TAG}}/g, robotsTag)
             .replace(/{{SERVICES_HTML}}/g, servicesHtml)
             .replace(/{{REVIEWS_HTML}}/g, reviewsHtml)

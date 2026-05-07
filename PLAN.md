@@ -41,19 +41,23 @@ Build a high-quality, "Friendly & Approachable" landing page for OnSitePetGroomi
    - Grid of 10 featured cities (Anchorage, Fayetteville, Tucson, etc.).
    - *Strategy:* Keep city count low for V1 to maintain fast build times and manual control.
 4. **Groomer Pitch Strip:**
-   - High-contrast banner: "Are you a Mobile Groomer? Get a professional site for $149." 
-   - Button: "Learn More" -> `groomer-websites.html`.
+   - High-contrast banner: "Are you a Mobile Groomer? When new clients search 'mobile groomer near me,' are you showing up? $49/month."
+   - Button: "Get Your Free Preview" -> `groomer-websites.html`.
 5. **Footer:** Simple links and "Made with love for pets."
 
 ### Pitch Page (`groomer-websites.html`)
-1. **Hero:** "The $149 Website for Mobile Groomers."
-2. **Features List:**
-   - Google Reviews integration.
-   - Mobile-first design.
-   - Domain connection included.
-3. **Contact Form:**
-   - Simple Lead Form (Name, Email, Business Name, Message).
-   - Powered by Formspree/Vercel Forms for reliable delivery.
+
+1. **Hero:** "When someone searches 'mobile groomer near me,' are you showing up?" — anchored on Google discoverability, not Facebook dependency.
+2. **Pricing:** $49/month subscription. No setup fee. No contract. We build first, groomer approves, then pays.
+3. **Features List (all included in base price):**
+   - Custom .com domain (not a subdirectory — groomer owns the address).
+   - Local SEO optimized for city-level search queries.
+   - Live Google Reviews (auto-displaying, not manually frozen).
+   - Booking request form (name, phone, pet/breed, preferred time → email to groomer).
+4. **3-Step Flow:** We build it → groomer approves → we launch and maintain it.
+5. **Contact Form:**
+   - Lead Form (Name, Business Name, Email, Phone, Message).
+   - Powered by Formspree for reliable delivery.
 
 ## SEO & Metadata
 - **Basic Meta:** Title, Description, Favicon.

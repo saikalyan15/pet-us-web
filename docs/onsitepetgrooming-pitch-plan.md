@@ -7,7 +7,7 @@
 
 Mobile groomers who rely solely on a Facebook page for their online presence are invisible to pet owners who search Google. Their Facebook page does not rank, cannot be found by someone typing "mobile dog groomer near me," and communicates nothing more than a follower count. They know this problem exists. They have simply never had a simple, affordable path out of it.
 
-The pitch is not "pay me to build you a website." The pitch is: "I already built one for you. It has your real customer reviews on it. Here is the link. If you want to keep it, it costs $149."
+The pitch is not "pay me to build you a website." The pitch is: "I already built one for you. It has your real customer reviews on it and lets clients request appointments directly. Here is the link. If you want to keep it, it's $49/month and I handle everything."
 
 There is no speculation in the offer. No promise of future traffic. No abstract value. The product exists at a URL before a single dollar changes hands.
 
@@ -123,38 +123,35 @@ Phone number. City. Link back to onsitepetgrooming.com in small text. Nothing el
 
 ## Pricing Strategy
 
-There are two tiers. Nothing more complex than this at the pitch stage.
+### The Offer — $49/month
 
-### Tier 1 — $149 (Core Offer)
+No setup fee. No contract. Cancel anytime.
 
 What they get:
-- Their page live permanently at `onsitepetgrooming.com/groomers/[their-slug]`
-- The page remains indexed on the site and visible to anyone with the link
-- Their real Google reviews displayed as testimonials
-- A simple one-paragraph handover note telling them to update their Facebook page's "Website" field to the new URL
 
-What you do after payment:
-1. Receive payment via Stripe or PayPal
-2. Remove the noindex tag from their page so it becomes crawlable
-3. Send them the URL and the handover note
-4. Done. Total post-payment work: fifteen minutes.
+- Their own custom .com domain (e.g. `ambersgroomingspa.com`) — not a subdirectory on someone else's site
+- A mobile-first groomer page with their services, live Google Reviews, and a booking request form
+- Clients can submit their name, phone, pet, and preferred time directly from the site — no more missed DMs or phone tag
+- We handle hosting, updates, and keeping the reviews current
+- Local SEO markup so the page is structured to rank for city-level searches
 
-### Tier 2 — $249 (With GBP Update)
+What you do after they approve the preview:
 
-Everything in Tier 1, plus:
-- You update their Google Business Profile "Website" field to point to the new page
-- This requires them to either share GBP access with you or do a screen share
-- Offer this tier only if they ask — do not lead with it
+1. Collect the first month via Dodo Payments (recurring link)
+2. Register their domain and point it to the live page
+3. Remove the noindex tag so the page becomes crawlable
+4. Send them a short note telling them to update their Facebook "Website" field and Google Business Profile URL
+5. Done. Total post-payment work: twenty minutes.
 
-### What Is Not Included (at any tier)
+### What Is Not Included
 
-- Custom domain setup. If they later want the site at `happypawscanton.com`, that is a separate conversation at $50 additional.
-- Ongoing updates. The site is static. If they want changes to services or hours later, offer that as a one-off for $30 per update.
-- Hosting transfer. The site stays on onsitepetgrooming.com. This is the product. A groomer who wants full ownership of the code can be given the HTML file for an extra $50 and they host it themselves.
+- Bespoke design or custom code beyond the template
+- Phone or video support — all communication by DM or email
+- Changes to services or copy after launch — offer these as one-off updates at $30 each if asked
 
-### Why $149, Not $99
+### Why Subscription, Not One-Time
 
-The testimonials section is the product differentiator that makes $149 defensible. Every generic website offer charges $99. Showing up with a finished site that already has their customers' real words on it is demonstrably more work and more value. $149 does not require justification in the pitch. The URL does the justifying.
+Every one-time offer in this space reads as "pay once, then we disappear." A $49/month subscription signals active maintenance — reviews stay current, the site stays live, someone is accountable. It also produces compounding revenue: a groomer who signs up in month 1 and stays for a year is worth $588, not $149. The price point is below the "think twice" threshold for a solo operator and does not require justification. The finished site at the URL does the justifying.
 
 ---
 
@@ -172,11 +169,11 @@ Send the DM at a time when small business owners check their messages: weekday m
 
 Keep it short. The URL is the pitch. The words around it just need to be human.
 
-> Hi [First Name] — I run OnSitePetGrooming.com, a directory for mobile groomers. I noticed you do not have a website yet, so I put one together for you using your business details and your Google reviews.
+> Hi [First Name] — I run OnSitePetGrooming.com, a directory for mobile groomers. I noticed you do not have a website yet, so I built one for you using your business details and your Google reviews. It also lets clients request appointments directly.
 >
 > Here it is: [URL]
 >
-> No catch. If you like it and want to keep it live, I charge $149. If not, no worries at all.
+> No catch. If you like it and want to keep it live, it's $49/month and I handle everything. If not, no worries at all.
 
 Do not add anything after that. No bullet points listing features. No "I specialise in helping small businesses." No "feel free to reach out with questions." The message ends after "no worries at all."
 
@@ -212,7 +209,7 @@ Placeholder search bar or static city links.
 Eight to ten real city names from your data with groomer counts. These do not need to be functional links yet. The presence of real places and numbers makes the site look operational.
 
 **For Groomers Strip**
-One horizontal band that says: *"Are you a mobile groomer? We build professional websites for mobile grooming businesses, with your real Google reviews included. Starting at $149."* Link this to one of the live pitch pages as the example.
+One horizontal band that says: *"Are you a mobile groomer? When new clients search 'mobile groomer near me,' are you showing up? Get a locally-optimized website with live Google Reviews for $49/month — we build it first, you approve it before paying."* Link to `groomer-websites.html`.
 
 **Footer**
 Contact email. Short description. Nothing else.
@@ -239,11 +236,11 @@ Contact email. Short description. Nothing else.
 
 ## What Success Looks Like at Each Stage
 
-**One conversion:** The model is not broken. Someone saw a real product at a real URL and paid real money. Proceed to Phase 2.
+**One conversion:** The model is not broken. Someone saw a real product at a real URL and started paying $49/month. Proceed to Phase 2.
 
 **Three conversions in one city:** The pitch is working in that geography. Move to a second city without changing the pitch.
 
-**Seven conversions across two cities:** You have crossed $1,000. The model is repeatable. This is the point to consider whether to keep doing this manually, build the generation tooling, or raise the price to $199–249.
+**Seven subscribers across two cities:** You have $343/month in recurring revenue. The model is repeatable. This is the point to consider whether to keep doing this manually, build the generation tooling, or test a price increase to $59–69/month for new signups.
 
 **Zero conversions after 10 DMs across two cities:** The pitch needs diagnosis. Reasons to investigate: the pages look too generic despite personalisation, the price is wrong, the FB DM channel is not landing, or the groomer segment is not motivated by website visibility the way we assumed. At that point, revisit before continuing.
 

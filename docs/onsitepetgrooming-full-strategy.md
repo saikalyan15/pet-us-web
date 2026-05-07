@@ -12,7 +12,7 @@ These are confirmed operating choices. They do not need revisiting unless a spec
 | Payment processor | **Dodo Payments** | Stripe not viable from India. Dodo account already active from previous directory attempt. Supports USD payments from India-based sellers. |
 | Review sourcing | **Manual copy** for first pages | Google Places API deferred until revenue funds the expansion. Copying 3–5 reviews per groomer takes 10 minutes. Sufficient for first 20–30 pages. |
 | Website model | **Template-first, customisation upsell** | Template closes faster, builds quicker. Customisation offered only after prospect expresses interest, not in opening DM. |
-| Pricing entry point | **$99 standard** | Not $79 (reads cheap), not $149 (too much to ask cold). $99 is the right psychological threshold for a pre-built product. |
+| Pricing entry point | **$49/month subscription** | One-time fees create no recurring revenue and signal the business may not last. $49/month is below the "think twice" threshold for a solo operator, signals ongoing service, and builds compounding MRR. Custom domain included in base price — no upsells in the opening pitch. |
 | Scaling philosophy | **Revenue funds tooling** | No upfront API costs or paid infrastructure until the first 5–10 conversions prove the model. Each path earns before expanding. |
 
 ---
@@ -114,15 +114,20 @@ Build a template-based one-page website for Facebook-only mobile groomers, popul
 
 ### The Pricing Model
 
-| Tier | What They Get | Price | Build Time |
-|---|---|---|---|
-| Standard | Template page live on onsitepetgrooming.com, reviews populated, phone click-to-call linked | $99 | 20 minutes |
-| Custom | Standard + rewritten About section in human voice, services reordered by priority, custom headline | $149 | 45 minutes |
-| Custom + GBP | Everything in Custom + you update their Google Business Profile website field | $199 | 60 minutes |
+**$49/month.** No setup fee. No contract. Cancel anytime.
 
-Lead with $99 in every DM. Mention the $149 and $199 tiers only when they reply with interest. Some will take $99 without asking about upgrades. Those who want more personalisation will ask — that is the natural moment to offer the higher tier, not before.
+Everything is included in the base price:
 
-**Why $99 and not $79:** $79 reads as cheap and low quality. $99 reads as under a hundred dollars but serious work was done. The price point does not need justifying in the pitch — the finished site at the URL does the justifying.
+- Custom .com domain (groomer owns the address, not a subdirectory on our site)
+- Mobile-first groomer page with services, reviews, and booking form
+- Live Google Reviews (auto-displayed, not manually frozen)
+- Booking request form (name, phone, pet/breed, preferred time → email to groomer)
+- Local SEO markup targeting city-level search queries
+- Hosting, updates, and ongoing review sync — we handle it
+
+**Why subscription, not one-time:** A one-time fee produces no recurring revenue and signals to the buyer that the service may not outlast their payment. $49/month is below the "think twice" threshold for a solo operator, implies active ongoing maintenance, and builds compounding MRR. At 50 subscribers that is $2,500/month from this path alone.
+
+**Why the custom domain is now included:** Selling a subdirectory page (`onsitepetgrooming.com/their-name`) is not a real website product. Groomers who understand what they are buying will reject it. Including the domain eliminates that objection and is a genuine differentiator versus any directory listing.
 
 ### How Reviews Are Populated
 
@@ -157,11 +162,14 @@ Dodo Payments — one-time payment link per transaction. Already have an account
 
 ### Revenue Sizing
 
-| Conversion Rate | Conversions | Revenue at $99 | Revenue if 50% upgrade to $149 |
-|---|---|---|---|
-| 1% | 3 | $297 | $372 |
-| 3% | 9 | $891 | $1,116 |
-| 5% | 15 | $1,485 | $1,860 |
+| Subscribers | Monthly Revenue | Annual Revenue |
+|---|---|---|
+| 10 | $490 | $5,880 |
+| 25 | $1,225 | $14,700 |
+| 50 | $2,500 | $30,000 |
+| 100 | $4,900 | $58,800 |
+
+Unlike one-time sales, each conversion compounds. A groomer who signs up in month 1 is still paying in month 12 unless they cancel — making early conversions disproportionately valuable.
 
 ### Infrastructure Required
 
@@ -396,7 +404,7 @@ If all eight paths are running and compounding:
 
 | Revenue Stream | Conservative Monthly | Optimistic Monthly |
 |---|---|---|
-| Website pitches — $99 standard, $149 custom (Path 2) | $200 | $800 |
+| Website subscriptions — $49/month (Path 2) | $500 | $2,500 |
 | Booking setup service (Path 3) | $400 | $1,500 |
 | pSEO affiliate (Path 1) | $800 | $3,000 |
 | Insurance affiliate (Paths 4 + 6) | $300 | $1,000 |
