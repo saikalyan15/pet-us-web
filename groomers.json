@@ -1,0 +1,36 @@
+{
+  "ambers-grooming": {
+    "business_name": "Amber's Grooming Spa",
+    "city": "Canton",
+    "state": "OH",
+    "folder": "oh-canton",
+    "tagline": "High-quality haircuts and specialized care for your furry friends. We bring the salon experience directly to your doorstep.",
+    "phone": "(330) 371-2335",
+    "facebook_url": "https://facebook.com/ambersgroomingspa",
+    "status": "preview",
+    "services": [
+      "✨ Full Grooming",
+      "🧼 Bath & Brush",
+      "✂️ Breed-Specific Cuts",
+      "💅 Nail Trims",
+      "👂 Ear Cleaning",
+      "🌬️ De-shedding"
+    ],
+    "reviews": [
+      {
+        "author": "Sarah M.",
+        "rating": 5,
+        "text": "Amber is amazing! She is so professional and genuinely cares about the animals. The attention to detail on my dog's haircut was incredible.",
+        "date": "March 2026",
+        "source": "Google"
+      },
+      {
+        "author": "David R.",
+        "rating": 5,
+        "text": "The best grooming experience we've had in Canton. The environment is so calm and clean. My dog usually gets anxious, but he was so relaxed.",
+        "date": "January 2026",
+        "source": "Google"
+      }
+    ]
+  }
+}

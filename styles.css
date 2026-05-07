@@ -157,6 +157,18 @@ nav {
     margin: 0 auto var(--space-md);
 }
 
+/* Cities Section */
+.cities-section {
+    text-align: center;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
 /* Feature Grid & Cards (Global) */
 .feature-grid {
     display: grid;
