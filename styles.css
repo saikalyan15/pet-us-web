@@ -176,6 +176,11 @@ nav {
     box-shadow: var(--shadow-sm);
     border: 1px solid rgba(0,0,0,0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    word-wrap: break-word; /* Fix overflow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .city-card:hover {
