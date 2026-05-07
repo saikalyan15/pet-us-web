@@ -164,9 +164,40 @@ nav {
 
 .cities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: var(--space-md);
     margin-top: var(--space-md);
+}
+
+.city-card {
+    background: var(--white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.city-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    color: var(--text-main);
+}
+
+.city-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
 }
 
 /* Feature Grid & Cards (Global) */
@@ -175,7 +206,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: var(--space-md);
     margin: var(--space-md) 0;
-    align-items: stretch; /* Ensure cards are same height */
+    align-items: stretch;
 }
 
 .feature-item {
@@ -207,41 +238,15 @@ nav {
     font-size: 0.95rem;
     color: var(--text-light);
     overflow-wrap: break-word;
-    word-break: normal; /* Avoid awkward breaks */
-    flex-grow: 1; /* Pushes content to fill height */
+    word-break: normal;
+    flex-grow: 1;
 }
 
 .feature-item strong {
     color: var(--text-main);
     display: inline-block;
     max-width: 100%;
-    overflow-wrap: anywhere; /* Allows URL to break anywhere if needed but cleanly */
-}
-
-/* City Grid (Specific override if needed) */
-.city-card {
-    background: var(--white);
-    padding: var(--space-md);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0,0,0,0.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-}
-
-.city-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.city-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 4px;
-}
-
-.city-card p {
-    font-size: 0.9rem;
-    color: var(--text-light);
+    overflow-wrap: anywhere;
 }
 
 /* Pitch Strip */
@@ -279,7 +284,7 @@ footer {
         font-size: 2rem;
     }
     .nav-links {
-        display: none; /* Simplification for V1 Mobile */
+        display: none;
     }
     .pitch-strip h2 {
         font-size: 1.5rem;
