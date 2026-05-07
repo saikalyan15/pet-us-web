@@ -1,0 +1,236 @@
+:root {
+    /* Palette */
+    --primary-bg: #e0f2f1;
+    --accent-warm: #ffca28;
+    --accent-warm-hover: #ffb300;
+    --text-main: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    --success: #4caf50;
+    
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    
+    /* Borders & Shadows */
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    
+    /* Typography */
+    --font-header: 'Quicksand', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Layout Containers */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: var(--space-lg) 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-family: var(--font-header);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: var(--accent-warm);
+    color: var(--text-main);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-warm-hover);
+    box-shadow: var(--shadow-md);
+}
+
+/* Navigation */
+header {
+    padding: var(--space-sm) 0;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-header);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.nav-links a:hover {
+    color: var(--accent-warm-hover);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-bg);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-main);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto var(--space-md);
+}
+
+/* City Grid */
+.cities-section {
+    text-align: center;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.city-card {
+    background: var(--white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.city-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.city-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Pitch Strip */
+.pitch-strip {
+    background: linear-gradient(135deg, var(--text-main) 0%, #444 100%);
+    color: var(--white);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    margin: var(--space-lg) 0;
+    border-radius: var(--radius-lg);
+}
+
+.pitch-strip h2 {
+    margin-bottom: var(--space-sm);
+    font-size: 2rem;
+}
+
+.pitch-strip p {
+    margin-bottom: var(--space-md);
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    padding: var(--space-md) 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .nav-links {
+        display: none; /* Simplification for V1 Mobile */
+    }
+    .pitch-strip h2 {
+        font-size: 1.5rem;
+    }
+}

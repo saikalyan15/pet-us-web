@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onsitepetgrooming.com/sitemap.xml
